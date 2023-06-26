@@ -1,7 +1,10 @@
+"use client"
+
 import React from 'react';
 import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/components/ui/accordion";
 import {ChatHeader} from "@/components/ChatHeader";
 import {ChatInput} from "@/components/ChatInput";
+import {ChatMessages} from "@/components/ChatMessages";
 
 type ChatPropsType = {};
 
@@ -17,7 +20,7 @@ export const Chat = ({}: ChatPropsType) => {
                     </AccordionTrigger>
                     <AccordionContent>
                         <div className="flex flex-col h-80">
-                            messages
+                            <ChatMessages className={'px-2 py-3 flex-1'} />
                             <ChatInput className={'px-4'}/>
                         </div>
                     </AccordionContent>

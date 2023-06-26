@@ -39,5 +39,5 @@ export async function POST(req: Request) {
     //console.log(payload);
 
     const stream = await OpenAIStream(payload);
-    return new Response(stream);
+    return new Response(stream as ReadableStream<ArrayBufferView | undefined>);
 }

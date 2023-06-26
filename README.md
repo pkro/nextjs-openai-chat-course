@@ -184,7 +184,7 @@ NEXT_PUBLIC_SOME_VAR=xyz # accessible in frontend
 Both in frontend and backend, these are accessible like usual using `process.env.VAR_NAME`, e.g. `process.env.NEXT_PUBLIC_SOME_VAR`. 
 
 
-
+- server components don't have access to hooks, so when using e.g. `useContext`, `"use client"` must be put on top of the component src.
 
 
 
